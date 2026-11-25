@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureDairy | Fresh Dairy Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">🐄 Pure<span>Dairy</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#products" class="nav-btn">
+                🛒 Shop Now (<span id="cartCount">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">FRESH FROM OUR FARM</p>
+            <h1>Pure Goodness.<br> Naturally.</h1>
+            <p>
+                Fresh, healthy and nutritious dairy products
+                delivered straight to your doorstep.
+            </p>
+            <a href="#products" class="btn">Explore Products →</a>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div>🌿 <strong>100% Natural</strong><small>No artificial additives</small></div>
+        <div>🛡️ <strong>Premium Quality</strong><small>Fresh and pure</small></div>
+        <div>❤️ <strong>Healthy Food</strong><small>Good for your family</small></div>
+        <div>🚚 <strong>Fast Delivery</strong><small>Fresh at your door</small></div>
+    </section>
+
+    <!-- Products -->
+    <section class="products section" id="products">
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Our Dairy Products</h2>
+            <span>Freshness and quality in every product.</span>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=600"
+                     alt="Fresh milk">
+                <h3>Fresh Milk</h3>
+                <p>Pure and wholesome milk</p>
+                <h4>₹60 / Litre</h4>
+                <button class="add-cart" data-name="Fresh Milk" data-price="60">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600"
+                     alt="Fresh yogurt">
+                <h3>Yogurt</h3>
+                <p>Creamy and delicious</p>
+                <h4>₹40 / 200g</h4>
+                <button class="add-cart" data-name="Yogurt" data-price="40">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=600"
+                     alt="Cheese">
+                <h3>Cheese</h3>
+                <p>Rich and flavorful</p>
+                <h4>₹120 / 200g</h4>
+                <button class="add-cart" data-name="Cheese" data-price="120">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=600"
+                     alt="Butter">
+                <h3>Butter</h3>
+                <p>Soft and delicious</p>
+                <h4>₹55 / 100g</h4>
+                <button class="add-cart" data-name="Butter" data-price="55">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600"
+                     alt="Paneer">
+                <h3>Paneer</h3>
+                <p>Fresh and nutritious</p>
+                <h4>₹90 / 200g</h4>
+                <button class="add-cart" data-name="Paneer" data-price="90">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1630411019118-5f5f1e3b0d20?w=600"
+                     alt="Ghee">
+                <h3>Pure Ghee</h3>
+                <p>Traditional rich flavor</p>
+                <h4>₹300 / 500ml</h4>
+                <button class="add-cart" data-name="Pure Ghee" data-price="300">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=900"
+                 alt="Green dairy farm">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">ABOUT PUREDAIRY</p>
+            <h2>From Our Farm<br>To Your Family</h2>
+            <p>
+                At PureDairy, we believe that good health begins
+                with good food. We are passionate about providing
+                fresh, delicious and quality dairy products.
+            </p>
+            <p>
+                Our commitment is to freshness, quality and
+                customer satisfaction every single day.
+            </p>
+            <a href="#contact" class="btn">Contact Us →</a>
+        </div>
+    </section>
+
+    <!-- Promise -->
+    <section class="promise">
+        <h2>Our Promise to You</h2>
+        <p>
+            Fresh products, trusted quality and a commitment
+            to bringing goodness to every home.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+            <span>We would love to hear from you!</span>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="customerName"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="customerEmail"
+                   placeholder="Your Email" required>
+
+            <textarea id="customerMessage"
+                      placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>🐄 PureDairy</h2>
+        <p>Goodness in Every Drop.</p>
+        <p>© 2026 PureDairy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
